@@ -1,0 +1,31 @@
+.noire{
+	background-color: grey;
+	width: 5em;
+	height : 5em;
+	text-align: center;
+}
+
+.blanche{
+	background-color: white;
+	width: 5em;
+	height : 5em;
+	text-align: center;
+}
+
+.vert{
+	border :solid;
+	border-color : green;
+	border-width: 5px;
+}
+
+table{
+	border : solid;
+	border-width: 5px;
+	border-collapse: collapse;
+	margin: auto;
+	margin-top: 5%;
+}
+img{
+	width: 3em;
+	height: 3em;
+}
