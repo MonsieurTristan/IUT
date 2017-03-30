@@ -13,9 +13,9 @@ for(i=1;i<11;i++){
 	plateau+="<tr>";
 	for(j=1;j<11;j++){
 		if(color==true){
-			plateau+="<td id =case-c"+i+"-l"+j+" class=blanche></td>";
+			plateau+="<td id =case-c"+j+"-l"+i+" class=blanche></td>";
 		}else{
-			plateau+="<td id =case-c"+i+"-l"+j+" class=noire></td>";
+			plateau+="<td id =case-c"+j+"-l"+i+" class=noire></td>";
 		}
 		color= !color;
 	}
@@ -30,15 +30,37 @@ document.getElementById('plateau').innerHTML = plateau;
 
 for(i=1;i<11;i++){
 	for(j=1;j<11;j++){
-		var ligne = i%2;
-		var colonne = j%2;
-		switch(ligne){
-			
+		var k = i+j;
+		k = k%2;
+		if(k==1){
+			if(i<=4){
+				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img id=pn"+j+";"+i+" src="+pNoir1+">";
+				document.getElementById("pn"+j+";"+i).addEventListener("mouseover", function(){
+					document.getElementById(this.id).className = "rouge";
+				});
+				document.getElementById("pn"+j+";"+i).addEventListener("mouseout", function(){
+					document.getElementById(this.id).className = null;
+				});
+				document.getElementById("pn"+j+";"+i).addEventListener("click", function(){
+					document.getElementById(this.id).className = "vert";
+					console.log(this.id);
+				});
+			}
+			if (i>=7){
+				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img id=pb"+j+";"+i+" src="+pBlanc1+">";
+				document.getElementById("pb"+j+";"+i).addEventListener("mouseover", function(){
+					document.getElementById(this.id).className = "rouge";
+				});
+				document.getElementById("pb"+j+";"+i).addEventListener("mouseout", function(){
+					document.getElementById(this.id).className = null;
+				});
+				document.getElementById("pb"+j+";"+i).addEventListener("click", function(){
+					document.getElementById(this.id).className = "vert";
+				});
+			}
 		}
 
-		switch(colonne){
-			
-		}
+		
 	}
 }
 
