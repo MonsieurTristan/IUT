@@ -34,7 +34,7 @@ for(i=1;i<11;i++){
 		k = k%2;
 		if(k==1){
 			if(i<=4){
-				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img id=pn"+j+";"+i+" src="+pNoir1+">";
+				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img id=pn"+j+";"+i+" src="+pNoir1+" draggable=true>";
 				document.getElementById("pn"+j+";"+i).addEventListener("mouseover", function(){
 					document.getElementById(this.id).className = "rouge";
 				});
@@ -47,7 +47,7 @@ for(i=1;i<11;i++){
 				});
 			}
 			if (i>=7){
-				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img id=pb"+j+";"+i+" src="+pBlanc1+">";
+				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img id=pb"+j+";"+i+" src="+pBlanc1+"  draggable=true>";
 				document.getElementById("pb"+j+";"+i).addEventListener("mouseover", function(){
 					document.getElementById(this.id).className = "rouge";
 				});
