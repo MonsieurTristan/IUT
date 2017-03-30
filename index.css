@@ -1,12 +1,12 @@
 .noire{
-	background-color: grey;
+	background-color: fuchsia;
 	width: 5em;
 	height : 5em;
 	text-align: center;
 }
 
 .blanche{
-	background-color: white;
+	background-color: gold;
 	width: 5em;
 	height : 5em;
 	text-align: center;
@@ -34,4 +34,8 @@ table{
 img{
 	width: 3em;
 	height: 3em;
+}
+
+body{
+	background-color: aqua;
 }
