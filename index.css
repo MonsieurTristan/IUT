@@ -1,6 +1,6 @@
 @font-face {
-	font-family: "persoFont";
-	src: url('font.ttf');
+	font-family: "police";
+	src: url('./font.ttf');
 }
 
 .noire{
@@ -43,7 +43,7 @@ img{
 
 body{
 	background-color: brown;
-	font: persoFont;
+	font-family: police;
 }
 
 h1{
@@ -57,4 +57,21 @@ h1{
 	border-radius: 30px;
 	color : lightgrey;
 	width : 10em;
+	font-weight: bold;
+	font-size:2em;
+}
+
+h3{
+	font-size:1.5em;
+}
+
+#htp{
+	margin : auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border : solid;
+	border-width: 2px;
+	border-color : grey;
+	border-radius: 30px;
+	color : lightgrey;
 }
