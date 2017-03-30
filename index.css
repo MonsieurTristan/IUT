@@ -1,12 +1,17 @@
+@font-face {
+	font-family: "persoFont";
+	src: url('font.ttf');
+}
+
 .noire{
-	background-color: fuchsia;
+	background-color: grey;
 	width: 5em;
 	height : 5em;
 	text-align: center;
 }
 
 .blanche{
-	background-color: gold;
+	background-color: lightgrey;
 	width: 5em;
 	height : 5em;
 	text-align: center;
@@ -37,5 +42,19 @@ img{
 }
 
 body{
-	background-color: aqua;
+	background-color: brown;
+	font: persoFont;
+}
+
+h1{
+	text-align: center;
+	margin : auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border : solid;
+	border-width: 2px;
+	border-color : grey;
+	border-radius: 30px;
+	color : lightgrey;
+	width : 10em;
 }
