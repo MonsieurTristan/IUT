@@ -61,6 +61,8 @@ h1{
 	font-size:2em;
 }
 
+
+
 h3{
 	font-size:1.5em;
 }
@@ -74,7 +76,10 @@ h3{
 	border-color : grey;
 	border-radius: 30px;
 	color : lightgrey;
+	font-size : 1em;
 }
+
+
 
 #timer{
 	text-align: center;
@@ -84,12 +89,17 @@ h3{
 	border-color: grey;
 	border-radius : 30px;
 	color: lightgrey;
-	height : 3em;
 	font-size: 1.5em;
-	width: 10em;
-	transition: width 3s;
+	transition: font-size 1s;
 }
 
 #timer:hover{
-	width: 20em;
+	font-size: 3em;
+}
+
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
