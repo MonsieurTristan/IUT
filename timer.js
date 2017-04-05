@@ -1,4 +1,4 @@
-var seconde=55;
+  var seconde=0;
   var minute=0;
   function Timer() {
     setInterval(flashText, 1000);
