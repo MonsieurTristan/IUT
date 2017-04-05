@@ -93,3 +93,5 @@ h3{
 #timer:hover{
 	width: 20em;
 }
+
+#draggable { width: 150px; height: 150px; padding: 0.5em; }

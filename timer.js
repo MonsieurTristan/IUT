@@ -1,8 +1,10 @@
 var seconde=0;
-  var minute=0;
-  function Timer() {
-    setInterval(flashText, 1000);
-  }
+var minute=0;
+
+
+function Timer() {
+  setInterval(flashText, 1000);
+}
 
   function flashText() {
     if(seconde==60){

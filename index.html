@@ -4,11 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Checkers</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
-
 </head>
 <h1> CHECKERS</h1>
 <div id="htp" >
-	<h3>How to play</h3>
+	<h3 >How to play</h3>
 	<ol>
 		<li> Checkers is played by two players. Each player begins the game with 15 colored discs. (Typically, one set of pieces is black and the other white.)</li>
 		<li> The board consists of 64 squares, alternating between 50 dark and 50 light squares. It is positioned so that each player has a light square on the right side corner closest to him or her. </li>
@@ -25,10 +24,21 @@
 	</ol>
 </div>
 
-<div id=timer></div>
+ 
+<div class="draggable">
+  <p>Drag me around</p>
+</div>
 
+<div id=timer></div>
 <div id=plateau></div>
 
-<script src="index.js"></script>
-<script type="text/javascript" src=timer.js></script>
+
 <script src="jquery-3.2.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="index.js"></script>
+<script src="timer.js"></script>
+  <script>
+  $( function() {
+    $( ".draggable" ).draggable();
+  } );
+  </script>
