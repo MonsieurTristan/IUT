@@ -1,4 +1,5 @@
-var seconde=55;
+window.onload(){
+  var seconde=55;
   var minute=0;
   function Timer() {
     setInterval(flashText, 1000);
@@ -12,3 +13,4 @@ var seconde=55;
     var elem = document.getElementById("timer").innerHTML="<p class=timer>"+minute+" min "+seconde+" s</p>";
     seconde +=1;
   }
+}
