@@ -37,19 +37,9 @@ for(i=1;i<11;i++){
 		k = k%2;
 		if(k==1){
 			if(i<=4){
-<<<<<<< HEAD
 				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img class=draggable id=pn"+j+";"+i+" src="+pNoir1+">";
-=======
-<<<<<<< HEAD
 				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img id=pn"+j+";"+i+" src="+pNoir1+" class=draggable>";
-
-
-
-
-=======
-				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img ondrag='drag()' id=pn"+j+";"+i+" src="+pNoir1+" draggable=true>";
->>>>>>> c3c5dcc0f3dfce761df2f35e8a73810c0c890346
->>>>>>> 8ee1f969b5f0ac4cd37035803b5952f3bc5e0da1
+				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img class=draggable id=pn"+j+";"+i+" src="+pNoir1+">";
 				document.getElementById("pn"+j+";"+i).addEventListener("mouseover", function(){
 					document.getElementById(this.id).className = "rouge";
 				});
@@ -62,15 +52,9 @@ for(i=1;i<11;i++){
 				});
 			}
 			if (i>=7){
-<<<<<<< HEAD
 				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img class=draggable id=pb"+j+";"+i+" src="+pBlanc1+">";
-=======
-<<<<<<< HEAD
 				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img id=pb"+j+";"+i+" src="+pBlanc1+" class=draggable>";
-=======
-				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img ondrag='drag()' id=pb"+j+";"+i+" src="+pBlanc1+"  draggable=true>";
->>>>>>> c3c5dcc0f3dfce761df2f35e8a73810c0c890346
->>>>>>> 8ee1f969b5f0ac4cd37035803b5952f3bc5e0da1
+				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img class=draggable id=pb"+j+";"+i+" src="+pBlanc1+">";
 				document.getElementById("pb"+j+";"+i).addEventListener("mouseover", function(){
 					document.getElementById(this.id).className = "rouge";
 				});
