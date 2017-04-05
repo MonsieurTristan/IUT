@@ -38,6 +38,7 @@ for(i=1;i<11;i++){
 		if(k==1){
 			if(i<=4){
 
+
 				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img id=pn"+j+";"+i+" src="+pNoir1+" class=draggable>";
 				document.getElementById('case-c'+j+'-l'+i).innerHTML="<img ondrag='drag()' id=pn"+j+";"+i+" src="+pNoir1+" draggable=true>";
 
