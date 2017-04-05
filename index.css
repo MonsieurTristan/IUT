@@ -75,3 +75,21 @@ h3{
 	border-radius: 30px;
 	color : lightgrey;
 }
+
+#timer{
+	text-align: center;
+	margin: auto;
+	border : solid;
+	border-width : 2px;
+	border-color: grey;
+	border-radius : 30px;
+	color: lightgrey;
+	height : 3em;
+	font-size: 1.5em;
+	width: 10em;
+	transition: width 3s;
+}
+
+#timer:hover{
+	width: 20em;
+}
