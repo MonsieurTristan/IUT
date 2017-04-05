@@ -4,14 +4,14 @@ Actuellement le projet valide : (barrer ce qui n'est pas encore implémenter et 
 Une page HTML s'affiche~~
 Le LESS/CSS est opérationnel~~
 ~~Les parties qui le peuvent sont imbriquées dans le code LESS~~
-~~Une partie du code est en jQuery~~
+Une partie du code est en jQuery~~
 le Git a un historique~~
 les conflits de GIT sont résolus~~
 
 #Fonctionnalités
 Un échiquier de 10x10 s'affiche~~
 Les pions sont au bon endroit~~
-~~On peut déplacer les pions~~
+On peut déplacer les pions~~
 ~~seulement aux endroits où c'est possible~~
 ~~On peut "prendre" un pion adverse en le "sautant"~~
 
