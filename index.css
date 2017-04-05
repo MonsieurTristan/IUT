@@ -94,6 +94,7 @@ h3{
 }
 
 #timer:hover{
+<<<<<<< HEAD
 	font-size: 3em;
 }
 
@@ -103,3 +104,9 @@ h3{
     -webkit-user-select: none;
     user-select: none;
 }
+=======
+	width: 20em;
+}
+
+#draggable { width: 150px; height: 150px; padding: 0.5em; }
+>>>>>>> c3c5dcc0f3dfce761df2f35e8a73810c0c890346
