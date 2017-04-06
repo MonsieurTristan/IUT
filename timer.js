@@ -32,7 +32,7 @@ function flashText2() {
     minuteB++;
     secondeB =0;
   }
-  var elem = document.getElementById("timerN").innerHTML="<p> Temps Pions Blancs "+minuteB+" min "+secondeB+" s</p>";
+  var elem = document.getElementById("timerB").innerHTML="<p> Temps Pions Blancs "+minuteB+" min "+secondeB+" s</p>";
 
   secondeB +=1;
 }
