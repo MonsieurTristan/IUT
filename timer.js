@@ -1,23 +1,44 @@
-var seconde=0;
-var minute=0;
+var secondeN=0;
+var minuteN=0;
+var secondeB=0;
+var minuteB=0;
 
-var elem = document.getElementById("timerN").innerHTML="<p> Temps Pions Noirs "+minute+" min "+seconde+" s</p>";
-var elem = document.getElementById("timerB").innerHTML="<p> Temps Pions Blancs "+minute+" min "+seconde+" s</p>";
+var tn;
+var tb;
 
-function Timer() {
-  setInterval(flashText, 1000);
+var elem = document.getElementById("timerN").innerHTML="<p> Temps Pions Noirs "+minuteN+" min "+secondeN+" s</p>";
+var elem = document.getElementById("timerB").innerHTML="<p> Temps Pions Blancs "+minuteB+" min "+secondeB+" s</p>";
+
+function TimerNoir() {
+  tn=setInterval(flashText, 1000);
 }
 
-  function flashText() {
-    if(seconde==60){
-      minute++;
-      seconde =0;
-    }
-    var elem = document.getElementById("timerN").innerHTML="<p> Temps Pions Noirs"+minute+" min "+seconde+" s</p>";
-    var elem = document.getElementById("timerB").innerHTML="<p> Temps Pions Blancs"+minute+" min "+seconde+" s</p>";
-    seconde +=1;
+function flashText() {
+  if(secondeN==60){
+    minuteN++;
+    secondeN =0;
   }
+  var elem = document.getElementById("timerN").innerHTML="<p> Temps Pions Noirs "+minuteN+" min "+secondeN+" s</p>";
 
- 
+  secondeN +=1;
+}
 
-  Timer();
+function TimerBlanc() {
+  tb=setInterval(flashText2, 1000);
+}
+
+function flashText2() {
+  if(secondeB==60){
+    minuteB++;
+    secondeB =0;
+  }
+  var elem = document.getElementById("timerN").innerHTML="<p> Temps Pions Blancs "+minuteB+" min "+secondeB+" s</p>";
+
+  secondeB +=1;
+}
+
+TimerNoir();
+
+
+
+

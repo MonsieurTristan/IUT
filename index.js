@@ -28,6 +28,10 @@ document.getElementById('plateau').innerHTML = plateau;
 
 /////////////////  PLACEMENT DES PIONS + SURVOL DES PIONS  /////////////////
 
+
+var cakidejouer = true; //True : Noir, False : Blanc
+
+
 for(i=1;i<11;i++){
 	for(j=1;j<11;j++){
 		var k = i+j;
