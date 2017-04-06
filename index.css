@@ -81,9 +81,8 @@ h3{
 
 
 
-#timer{
+.timer{
 	text-align: center;
-	margin: auto;
 	border : solid;
 	border-width : 2px;
 	border-color: grey;
@@ -91,9 +90,12 @@ h3{
 	color: lightgrey;
 	font-size: 1.5em;
 	transition: font-size 1s;
+	width : 49%;
+	display : inline-block;
+
 }
 
-#timer:hover{
+.timer:hover{
 	font-size: 3em;
 }
 
