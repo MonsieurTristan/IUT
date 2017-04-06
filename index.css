@@ -97,12 +97,5 @@ h3{
 	font-size: 3em;
 }
 
-[draggable] {
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-
 #draggable { width: 150px; height: 150px; padding: 0.5em; }
+
